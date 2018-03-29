@@ -124,7 +124,7 @@ If everything goes well you will see library entry is made in build -> exploded-
 ### Video Offerwall List
 Video Offerwall List format lets you show multiple video ads in a single vertical form.
 
-[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai-app/wiki/Video-Offerwall-List)
+[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai.content-app/wiki/Video-Offerwall-List)
 
 
 ## Your feedback and questions
