@@ -1,13 +1,13 @@
-VID.AI Android SDK
+VID.AI Content SDK(Android)
 =======================
-This guide and sample code is intended for publishers who want to monetize their Android app with VID.AI SDK.
+This guide and sample code is intended for publishers who want to monetize their Android app with VID.AI Content SDK.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 For more information please see [the website](http://www.tyroo.com/)
 
 ## Changelog
-To see what has changed in recent versions of VID.AI SDK for Android, see the [CHANGELOG](CHANGELOG.md).
+To see what has changed in recent versions of VID.AI Content SDK for Android, see the [CHANGELOG](CHANGELOG.md).
 
 ## How Does Video Monetisation Work
 Video Content consumption is growing on mobile and advertisers are spending huge dollar on video advertising. 50% of these videos are consumed on mobile. Focus on short format video has also increased as the average human span attention is less than 8 sec. Also there is in an interesting insight about video consumption, 98% of time Phones are used in portrait mode while consuming videos. Our video content cloud SDK gives access to Short format vertical and horizontal videos.Our Android native video player embedded in SDK supports VAST 4.0, VAST 3.0 and VAST 2.0 Inline Linear Ads.
@@ -41,19 +41,19 @@ allprojects {
 Step 2: Add the following line to the dependencies element in your application module’s build.gradle.
 
 ```groovy
-compile 'com.tyroo:vidai:1.1.2'
+compile 'com.tyroo.vidai:contentsdk:1.0.0'
 ```
 Step 3: Sync your Gradle project to ensure that the dependency is downloaded by the build system.
 
 
 **Method 2:** Manual Download
 
-* Download the Vid.ai SDK AAR file from [here](http://rep.tyroo.com/SDK/vidai-release-1.1.2.aar)
+* Download the Vid.AI Content SDK AAR file from [here](http://rep.tyroo.com/SDK/vidai-content-release-1.0.0.aar)
 
 
 To manually include external or downloaded AAR file into your project create a directory named 'libs' into your app module.
 
-Lets say you have kept aar file in libs folder ( assume file name is vidai-release-1.1.2.aar ) then in app build.gradle specify following and click sync project with Gradle files. Open Project level build.gradle and add flatDir{dirs 'libs'} like did below
+Lets say you have kept aar file in libs folder ( assume file name is vidai-content-release-1.0.0.aar ) then in app build.gradle specify following and click sync project with Gradle files. Open Project level build.gradle and add flatDir{dirs 'libs'} like did below
 
 
 ```groovy
@@ -70,13 +70,13 @@ and now open app level build.grdle file and add .aar file
 
 ```groovy
 dependencies {
-       compile(name:'vidai-release-1.1.2', ext:'aar')
+       compile(name:'vidai-content-release-1.0.0.aar', ext:'aar')
 }
 ```
 
 #### Additional Dependencies Required
 
-To monetize with Tyroo Vid.AI SDK using AAR file, you must add the following dependencies in your application module’s build.gradle:
+To monetize with Tyroo Vid.AI Content SDK using AAR file, you must add the following dependencies in your application module’s build.gradle:
 
 * Picasso
 ```groovy
@@ -109,38 +109,22 @@ If everything goes well you will see library entry is made in build -> exploded-
 
 ```groovy
 <dependency>
-  <groupId>com.tyroo</groupId>
-  <artifactId>vidai</artifactId>
-  <version>1.1.2</version>
+  <groupId>com.tyroo.vidai</groupId>
+  <artifactId>contentsdk</artifactId>
+  <version>1.0.0</version>
   <type>pom</type>
 </dependency>
 ```
 
 ## Available Ad Formats 
 
-![InVideoFeed](https://github.com/tyrootechnology/vid.ai-app/blob/master/screenshots/screen.jpg)
+![InVideoFeed](https://github.com/tyrootechnology/vid.ai-app/blob/master/screenshots/content_in_feed.png)
 
-### In Feed/In Article Video
-In-Feed or In-Article Video ads-namely, the ads that show up in the middle of the stream as you scroll through your favorite news feed, social feed, at some position of recyclerview, application start screen or some other portion of the app.
 
-In feed/In Article videos can be customised to suit the applications look and feel. Multiple customisation options are also available in it's integratin guidelines.
+### Video Offerwall List
+Video Offerwall List format lets you show multiple video ads in a single vertical form.
 
-[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai-app/wiki/In-Feed-Video)
-
-### Offerwall Videos
-The Offerwall format lets you show multiple video ads in a Grid form.
-
-[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai-app/wiki/Offerwall-Videos)
-
-### In Feed/In Article carousel Video
-The carousel format lets you show multiple videos ads, headlines and links, or calls to action in a single ad unit. Anyone who sees ad can then scroll through the carousel cards by swiping left-right on mobile phones.
-
-[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai-app/wiki/In-Feed-carousel-Video)
-
-### Interstitial Video
-Interstitial video ads are full-screen ad formats covering the interface of an app and appearing at natural app action points.
-
-[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai-app/wiki/Interstitial-Video)
+[See Integration Guidelines](https://github.com/tyrootechnology/vid.ai-app/wiki/Video-Offerwall-List)
 
 
 ## Your feedback and questions
