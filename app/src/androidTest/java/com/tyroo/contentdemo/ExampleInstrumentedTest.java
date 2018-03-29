@@ -1,4 +1,4 @@
-package com.tyroo.tyroovastdemoapp;
+package com.tyroo.contentdemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

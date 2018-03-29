@@ -5,7 +5,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.tyroo.tyroovastdemoapp"
+        applicationId "com.tyroo.contentdemo"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
@@ -46,8 +46,11 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.squareup.okhttp3:okhttp:3.9.0'
     implementation 'com.google.code.gson:gson:2.8.2'
-    //compile(name: 'vidai-release-1.0.2', ext: 'aar')
-    implementation 'com.tyroo:vidai:1.1.2'
+    implementation 'com.google.firebase:firebase-ads:11.8.0'
+    implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.8.2'
+
+    implementation(name: 'vidai-content-sdk-1.0.0', ext: 'aar')
+    //implementation 'com.tyroo.vidai:contentsdk:1.0.0'
     //debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     //releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 

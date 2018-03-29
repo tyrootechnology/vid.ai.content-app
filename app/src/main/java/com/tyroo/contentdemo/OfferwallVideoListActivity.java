@@ -1,23 +1,23 @@
-package com.tyroo.tyroovastdemoapp;
+package com.tyroo.contentdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.tyroo.tva.sdk.AdView;
-import com.tyroo.tva.sdk.TyrooVidAiSdk;
+import com.tyroo.io_stream_videos.sdk.AdView;
+import com.tyroo.io_stream_videos.sdk.TyrooVidAiSdk;
 
 
-public class VideoInFeedActivity extends AppCompatActivity implements TyrooVidAiSdk.TyrooAdListener {
+public class OfferwallVideoListActivity extends AppCompatActivity implements TyrooVidAiSdk.TyrooAdListener {
 
-    private static final String TAG = "VideoInFeedActivity";
+    private static final String TAG = "OfferwallVideo";
     AdView adView;
     TyrooVidAiSdk tyrooVidAiSdk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_video_in_feed);
+        setContentView(R.layout.activity_discover_wall);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         adView = (AdView) findViewById(R.id.adView);
         initTyrooVidAiSdk();
@@ -25,17 +25,22 @@ public class VideoInFeedActivity extends AppCompatActivity implements TyrooVidAi
 
     private void initTyrooVidAiSdk() {
         try {
-            tyrooVidAiSdk = TyrooVidAiSdk.initialize(getApplicationContext(),"1707","009", this);//TyrooVidAiSdk.initialize(getApplicationContext());
+            tyrooVidAiSdk = TyrooVidAiSdk.initialize(getApplicationContext(),"1701","009", this);//TyrooVidAiSdk.initialize(getApplicationContext());
             tyrooVidAiSdk.setAdViewLayout(adView);
             tyrooVidAiSdk.enableCaching(true);
             tyrooVidAiSdk.loadAds();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+
     @Override
     protected void onDestroy() {
+        //InitiateTyrooSdk.destroyInstance();
+        // RefWatcher refWatcher = DemoApplication.getRefWatcher(this);
+        // refWatcher.watch(this);
         adView.removeAllViews();
         tyrooVidAiSdk.flush();
         super.onDestroy();

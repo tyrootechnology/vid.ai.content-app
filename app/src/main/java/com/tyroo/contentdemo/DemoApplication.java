@@ -1,4 +1,4 @@
-package com.tyroo.tyroovastdemoapp;
+package com.tyroo.contentdemo;
 
 import android.app.Application;
 import android.content.Context;

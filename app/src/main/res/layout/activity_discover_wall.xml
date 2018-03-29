@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".DiscoverWallActivity">
+    tools:context=".OfferwallVideoListActivity">
 
-    <com.tyroo.tva.sdk.AdView
+    <com.tyroo.io_stream_videos.sdk.AdView
         android:id="@+id/adView"
         android:layout_height="match_parent"
         android:layout_width="match_parent" />
