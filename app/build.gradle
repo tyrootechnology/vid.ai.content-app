@@ -49,8 +49,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-ads:11.8.0'
     implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.8.2'
 
-    implementation(name: 'vidai-content-sdk-1.0.0', ext: 'aar')
-    //implementation 'com.tyroo.vidai:contentsdk:1.0.0'
+    //implementation(name: 'vidai-content-sdk-1.0.0', ext: 'aar')
+    implementation 'com.tyroo.vidai:contentsdk:0.0.2'
     //debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     //releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 

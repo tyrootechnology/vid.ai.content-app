@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.tyroo.io_stream_videos.sdk.AdView;
-import com.tyroo.io_stream_videos.sdk.TyrooVidAiSdk;
+import com.tyroo.contentsdk.sdk.AdView;
+import com.tyroo.contentsdk.sdk.TyrooVidAiSdk;
 
 
 public class OfferwallVideoListActivity extends AppCompatActivity implements TyrooVidAiSdk.TyrooAdListener {

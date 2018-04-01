@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.tyroo.io_stream_videos.sdk.TyrooVidAiSdk;
+import com.tyroo.contentsdk.sdk.TyrooVidAiSdk;
 
 public class MainActivity extends AppCompatActivity implements TyrooVidAiSdk.TyrooAdListener {
 
