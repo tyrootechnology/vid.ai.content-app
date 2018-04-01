@@ -118,7 +118,7 @@ If everything goes well you will see library entry is made in build -> exploded-
 
 ## Available Ad Formats 
 
-![InVideoFeed](https://github.com/tyrootechnology/vid.ai-app/blob/master/screenshots/content_in_feed.png)
+![Video Offerwall](https://github.com/tyrootechnology/vid.ai.content-app/blob/master/screenshots/content_in_feed.png)
 
 
 ### Video Offerwall List
