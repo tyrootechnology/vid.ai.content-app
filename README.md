@@ -124,7 +124,7 @@ Video Offerwall List format lets you show multiple video ads in a single vertica
 [See Integration Guidelines](https://github.com/tyrootechnology/vid.ai.content-app/wiki/Video-Offerwall-List)
 
 <p align="center">
-<img height="600" width="400" src="https://github.com/tyrootechnology/vid.ai.content-app/blob/master/screenshots/content_in_feed.png">
+<img height="600" width="320" src="https://github.com/tyrootechnology/vid.ai.content-app/blob/master/screenshots/content_in_feed.png">
 </p>
 
 ## Your feedback and questions
