@@ -118,14 +118,14 @@ If everything goes well you will see library entry is made in build -> exploded-
 
 ## Available Ad Formats 
 
-![Video Offerwall](https://github.com/tyrootechnology/vid.ai.content-app/blob/master/screenshots/content_in_feed.png)
-
-
 ### Video Offerwall List
 Video Offerwall List format lets you show multiple video ads in a single vertical form.
 
 [See Integration Guidelines](https://github.com/tyrootechnology/vid.ai.content-app/wiki/Video-Offerwall-List)
 
+<p align="center">
+<img height="600" width="400" src="https://github.com/tyrootechnology/vid.ai.content-app/blob/master/screenshots/content_in_feed.png">
+</p>
 
 ## Your feedback and questions
 At Tyroo we're massive believers in feedback! Here are some common ways to share your thoughts with us:
